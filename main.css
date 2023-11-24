@@ -57,36 +57,5 @@ button{
 
 }
 button:hover {
-    background-color: #005C40;
-}
-
-.container{
-    width: 100vw;
-    height: 100vh;
-    padding: 0 8%;
-}
-
-.content{
-    top: 50%;
-    position: absolute;
-    transform: translateY(-50%);
-    color: white;
-}
-
-.content h1{
-    font-size: 45px;
-    font-weight: 600;
-}
-
-.countdown-time{
-    display: flex;
-}
-
-.countdown-time div{
-    flex-basis: 100px;
-}
-
-.countdown-time div p{
-    font-size: 60px;
-    margin-bottom: -14px;
+    background-color: #e4fa89;
 }
