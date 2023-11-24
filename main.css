@@ -59,3 +59,51 @@ button{
 button:hover {
     background-color: #e4fa89;
 }
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+    height: 80vh;
+    width: 100%;
+    overflow: hidden;
+}
+.software-dev-open{
+    font-size: 45px;
+    color: white;
+    font-weight: 600;
+}
+
+.visit-us{
+    font-size: 20px;
+    color: white;
+}
+
+.container .time-content{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+}
+
+.time-content .time{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.time .number,
+.time .text{
+    font-weight: 500;
+    color: white;
+}
+
+.time .number{
+    font-size: 40px;
+}
+
+.time .text{
+    text-transform: capitalize;
+    font-size: 12px;
+}
