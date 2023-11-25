@@ -6,22 +6,25 @@
     <meta name="description" content="Techniek College Rotterdam Open Dagen">
     <title>Periode 2</title>
     <link rel="stylesheet" href="main.css">
-    <script src="opendag.js"></script>
+    <script src="opendag.js" defer></script>
 </head>
 <body>
 <header class="tcr">
     <a class="tcr-logo" href="index.html">LOGO</a>
     <nav class="tcr-navbar">
         <a href="index.html">Home</a>
-        <a href="#">Quiz</a>
-        <a href="#">Open Days</a>
+        <a href="#quiz1">Quiz</a>
+        <a href="#Open">Open Days</a>
     </nav>
     <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie" class="aanmelden"><button>Aanmelden</button></a>
 </header>
+
 <section class="container">
+    <label id="TIME"></label>
     <p class="software-dev-open">Open Days Software Developer</p>
     <p class="visit-us">You can visit us in:</p>
     <div class="time-content">
+     
         <div class="time days">
             <p class="number" id="days">00</p>
             <span class="text">days</span>
@@ -41,8 +44,29 @@
     </div>
 </section>
 
-    <section>
-        
-    </section>
+<section class="quiz" id="quiz1">
+    <h1> Quiz</h1>
+  </section>
+
+  <section class="section-opendag" id="Open">
+    <div class="information">
+      <div class="paragraph-title">
+        <h1>Open Days</h1>
+      </div>
+      <div class="information1">
+        <div class="information2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            ratione atque possimus repellat velit consequuntur earum maiores
+            voluptatibus repellendus ullam repudianda
+          </p>
+          <button type="button">registration</button>
+        </div>
+        <div class="image">
+          <img alt="student" src="image.png" />
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
