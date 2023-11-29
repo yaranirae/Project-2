@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--suppress ALL -->
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,20 @@
     <title>Periode 2</title>
     <link rel="stylesheet" href="main.css">
     <script src="opendag.js" defer></script>
+    <script src="https://kit.fontawesome.com/2f6b0c498f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header class="tcr">
-    <a class="tcr-logo" href="index.html">LOGO</a>
+    <a class="tcr-logo" href="index.html"><img src="images/TCR-Logo.png" alt="Techniek College Logo" width="155" height="75"></a>
     <nav class="tcr-navbar">
-        <a href="index.html">Home</a>
+        <a href="#home">Home</a>
         <a href="#quiz1">Quiz</a>
         <a href="#Open">Open Days</a>
     </nav>
-    <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie" class="aanmelden"><button>Aanmelden</button></a>
+    <a href="https://www.techniekcollegerotterdam.nl/aanmelden/studie" class="aanmelden"><button class="register">Register</button></a>
 </header>
 
-<section class="container">
+<section class="container" id="home">
     <label id="TIME"></label>
     <p class="software-dev-open">Open Days Software Developer</p>
     <p class="visit-us">You can visit us in:</p>
@@ -41,6 +43,28 @@
             <p class="number" id="seconds">00</p>
             <span class="text">seconds</span>
         </div>
+    </div>
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined"><i class="fa-regular fa-message"></i></span>
+        <span class="material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+    <div>
+    <div class="chatbot">
+        <header class="chatbot-header">
+        <h2>Chatbot</h2>
+        <span class="close-btn material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined"><i class="fa-solid fa-robot"></i></span>
+                <p>Hi there👋<br>How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+          <textarea aria-label="" placeholder="Enter a message..." required></textarea>
+      <span id="send-btn" class="material-symbols-outlined"><i class="fa-solid fa-paper-plane"></i></span>
+        </div>
+    </div>
     </div>
 </section>
 
