@@ -1,4 +1,4 @@
-// Ni-Yara
+// Ni-Yara - Countdown
 let countDownDate = new Date("Jan 26, 2024 00:00:00").getTime();
 const x = setInterval(function () {
   let now = new Date().getTime();
@@ -15,7 +15,7 @@ const x = setInterval(function () {
   document.getElementById("seconds").innerHTML = seconds;
 });
 
-// Raghda
+// Raghda - Welcome greeting
 let myDate = new Date();
 let hrs = myDate.getHours();
 let mins = myDate.getMinutes();
@@ -31,7 +31,7 @@ if (hrs >= 6 && hrs <= 11.59) {
 document.getElementById("TIME").innerHTML = `<br><p>${greet}</p>`;
 document.getElementById("TIME").classList.add('software-dev-open')
 
-// Ni-Yara Chatbot
+// Ni-Yara - Chatbot
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox");
