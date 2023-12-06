@@ -1,3 +1,4 @@
+
 let countDownDate = new Date("Jan 26, 2024 00:00:00").getTime();
 const x = setInterval(function () {
   let now = new Date().getTime();
@@ -12,11 +13,23 @@ const x = setInterval(function () {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
+
+  if (days===0 &&hours===0 && minutes === 0 && seconds === 0) {
+    y();
+    welcom();
+  }
 });
+function welcom() {
+  // canvas.style.display = 'block'
+  let newWelcom = document.createElement("p");
+  container.appendChild(newWelcom);
+  newWelcom.innerText = 'Hurrah! openday is begun'
+  newWelcom.classList.add("software-dev-open");
+}
 // Raghda
 let myDate = new Date();
 let hrs = myDate.getHours();
-let mins = myDate.getMinutes();
+
 let greet;
 console.log(hrs);
 if (hrs >= 6 && hrs <= 11.59) {
