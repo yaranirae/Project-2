@@ -2,6 +2,8 @@
 html {
     scroll-behavior: smooth;
   }
+
+/* Ni-Yara Header & Countdown */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -26,7 +28,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 5px 4%;
+    box-shadow: 0 10px 14px rgba(0,0,0,.08);
 }
 
 .tcr-logo{
@@ -79,6 +82,11 @@ button:hover {
     font-size: 45px;
     color: white;
     font-weight: 600;
+}
+
+.data-jan{
+    font-size: 30px;
+    color: white;
 }
 
 .visit-us{
