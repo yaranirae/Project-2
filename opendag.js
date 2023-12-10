@@ -27,6 +27,7 @@ const x = setInterval(function () {
   }
 });
 function welcom() {
+  document.querySelector(".data-jan").innerHTML = ''
   document.querySelector(".time-content").innerHTML = ''
   let newWelcom = document.createElement("p");
   var chang = document.getElementById("changing");

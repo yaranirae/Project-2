@@ -176,11 +176,40 @@ button:hover {
 .information1{
     display: flex;
     flex-direction: row-reverse;
-    gap: 200PX;
+    align-items: center;
+    justify-content: center;
+    width: 1400px;
+    gap: 150PX;
+    margin: 0 auto;
+    
 }
 .image{
-    margin: 25px;
+   
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+
 }
 .information2 button{
-    margin: 25px;
+    margin: 25px 0;
+}
+.information2{
+    flex: 1;
+}
+.information2 p{
+    width: 70%;
+    font-size: 16px;
+    color: white;
+}
+@media (max-width: 750px) {
+    /* … */
+  
+    .information1 {
+        flex-direction: column;
+        width: 700px;
+    }
+    .information2 p{
+        color: blue;
+    }
 }
