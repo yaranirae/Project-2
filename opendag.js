@@ -51,7 +51,7 @@ if (hrs >= 6 && hrs <= 11.59) {
 document.getElementById("TIME").innerHTML = `<br><p>${greet}</p>`;
 document.getElementById("TIME").classList.add('software-dev-open')
 
-// Ni-Yara - Chatbot
+// Ni-Yara Chatbot
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox");
@@ -59,7 +59,7 @@ const chatbotToggler= document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn= document.querySelector(".close-btn")
 
 let userMessage;
-const API_KEY = "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";
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
