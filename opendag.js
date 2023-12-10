@@ -1,5 +1,8 @@
 // Ni-Yara - Countdown
 let countDownDate = new Date("Jan 26, 2024 00:00:00").getTime();
+function stopCounter() {
+  clearInterval(x)
+}
 const x = setInterval(function () {
   let now = new Date().getTime();
   let distance = countDownDate - now;
@@ -13,6 +16,10 @@ const x = setInterval(function () {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
+  if (days== 0 &&hours == 0 && minutes == 0 && seconds === 0) {
+    stopCounter();
+     welcom();
+   }
 });
 function welcom() {
   document.querySelector(".data-jan").innerHTML = ''
