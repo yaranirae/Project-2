@@ -124,6 +124,7 @@ a{
     text-transform: capitalize;
     font-size: 12px;
 }
+
 /* Raghda */
 .quiz{
     display: flex;
@@ -176,17 +177,42 @@ a{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    background-color: #004630;
 }
 .information1{
     display: flex;
     flex-direction: row-reverse;
-    gap: 200PX;
+    align-items: center;
+    justify-content: center;
+    width: 1400px;
+    gap: 150PX;
+    margin: 0 auto;
+    
 }
 .image{
-    margin: 25px;
+   
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+
 }
 .information2 button{
+<<<<<<< HEAD
     margin: 25px;
+=======
+    
+    margin: 25px 0;
+}
+
+.information2{
+    flex: 1;
+}
+.information2 p{
+    width: 70%;
+    font-size: 16px;
+    color: white;
+>>>>>>> 1e39ed18b36f738200d89a903a6f02219877f0cd
 }
 
 /* Ni-Yara  Chatbot */
@@ -238,7 +264,11 @@ a{
     border-radius: 25px;
     transform-origin: bottom right;
     box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),
+<<<<<<< HEAD
     0 32px 64px -48px rgba(0,0,0,0.5);
+=======
+                0 32px 64px -48px rgba(0,0,0,0.5);
+>>>>>>> 1e39ed18b36f738200d89a903a6f02219877f0cd
     transition: all 0.1s ease;
 }
 
@@ -356,12 +386,21 @@ a{
 }
 
 @media (max-width: 490px) {
+<<<<<<< HEAD
     .chatbot {
         right: 0;
         bottom: 0;
         width: 100%;
         height: 100%;
         border-radius: 0;
+=======
+   .chatbot {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+>>>>>>> 1e39ed18b36f738200d89a903a6f02219877f0cd
     }
     .chatbot .chatbox{
         height: 90%;
