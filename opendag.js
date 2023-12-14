@@ -16,7 +16,7 @@ const x = setInterval(function () {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
-  if (days== 0 &&hours == 0 && minutes == 0 && seconds === 0) {
+  if (days== 0 &&hours == 0 && minutes == 0 && seconds == 0) {
     stopCounter();
      welcom();
    }
@@ -39,14 +39,20 @@ let myDate = new Date();
 let hrs = myDate.getHours();
 let mins = myDate.getMinutes();
 let greet;
-console.log(hrs);
-if (hrs >= 6 && hrs <= 11.59) {
-  greet = "Good Morning ☀️";
-} else if (hrs >= 12 && hrs <= 17.59) {
-  greet = "Good Afternoon 🌇";
-} else {
-  greet = "Good Evening 🌃";
+
+
+if  (hrs >= 6 && hrs <= 11.59)
+ {
+   greet= "Good Morning ☀️";
+  }
+else if(hrs >= 12 && hrs <= 17.59){
+  
+  greet= "Good Afternoon 🌇";
 }
+else{
+ greet= "Good Evening 🌃";
+}
+
 document.getElementById("TIME").innerHTML = `<br><p>${greet}</p>`;
 document.getElementById("TIME").classList.add('software-dev-open')
 
@@ -124,3 +130,6 @@ chatInput.addEventListener("keydown", (e) =>{
 sendChatBtn.addEventListener("click", handleChat );
 chatbotCloseBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
+
+
+//responsive
