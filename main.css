@@ -50,7 +50,7 @@ a {
 
 .tcr-navbar,
 a {
-  background: #005c40;
+  /* background: #005c40; */
   display: inline-block;
   padding: 0 20px;
   transition: all 0.3s ease 0s;

@@ -32,9 +32,7 @@ function welcom() {
   
   
 }
-// Raghda
 
-// Raghda - Welcome greeting
 let myDate = new Date();
 let hrs = myDate.getHours();
 let mins = myDate.getMinutes();
@@ -43,14 +41,14 @@ let greet;
 
 if  (hrs >= 6 && hrs <= 11.59)
  {
-   greet= "Good Morning ☀️";
+   greet= "Goedemorgen ☀️";
   }
 else if(hrs >= 12 && hrs <= 17.59){
   
-  greet= "Good Afternoon 🌇";
+  greet= "Goedemiddag 🌇";
 }
 else{
- greet= "Good Evening 🌃";
+ greet= "Goedenavond 🌃";
 }
 
 document.getElementById("TIME").innerHTML = `<br><p>${greet}</p>`;
