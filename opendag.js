@@ -16,18 +16,19 @@ const x = setInterval(function () {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
-  if (days== 0 &&hours == 0 && minutes == 0 && seconds == 0) {
+  if (days=== 0 &&hours === 0 && minutes === 0 && seconds === 0) {
     stopCounter();
-     welcom();
+     welcome();
    }
 });
-function welcom() {
+
+function welcome() {
   document.querySelector(".data-jan").innerHTML = ''
   document.querySelector(".time-content").innerHTML = ''
   let newWelcom = document.createElement("p");
-  var chang = document.getElementById("changing");
+  let chang = document.getElementById("changing");
   container.appendChild(newWelcom);
-  chang.innerHTML = 'Hurray! The Open Days have started!'
+  chang.innerHTML = 'Hoera! De open dagen zijn vandaag begonnen!'
   newWelcom.classList.add("software-dev-open");
   
   
@@ -62,7 +63,7 @@ const chatbotToggler= document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn= document.querySelector(".close-btn")
 
 let userMessage;
-const API_KEY = "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";
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {

@@ -22,7 +22,6 @@ a {
   font-weight: 600;
   font-size: 20px;
   color: white;
-  text-decoration: none;
 }
 
 .tcr {
@@ -35,7 +34,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 4%;
+  padding: 5px 3%;
   box-shadow: 0 10px 14px rgba(0, 0, 0, 0.08);
 }
 
@@ -51,6 +50,7 @@ a {
 .tcr-navbar,
 a {
   /* background: #005c40; */
+  font-size: 19px;
   display: inline-block;
   padding: 0 20px;
   transition: all 0.3s ease 0s;
