@@ -384,3 +384,24 @@ a:hover {
     }
 }
 /* ................................... */
+
+footer{
+  background-color: #004630;
+  display: flex;
+  height: auto;
+  align-items: center;
+  height: 100px;
+}
+
+.footer-socials{
+  display: flex;
+}
+
+.footer-socials a{
+  font-size: small;
+  letter-spacing: 3px;
+}
+
+.footer-image img{
+  height: 80px;
+}
