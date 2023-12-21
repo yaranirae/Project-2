@@ -50,7 +50,7 @@ a {
 .tcr-navbar,
 a {
   /* background: #005c40; */
-  font-size: 25px;
+  font-size: 17px;
   display: inline-block;
   padding: 0 20px;
   transition: all 0.3s ease 0s;
@@ -135,7 +135,7 @@ a:hover {
 .section-opendag {
   display: flex;
   flex-direction: column;
-  height: 87vh;
+  height: 72vh;
   background: white;
   
 }
@@ -384,3 +384,33 @@ a:hover {
     }
 }
 /* ................................... */
+
+
+.footer-container{
+  max-width: 1300px;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+} 
+
+footer{
+  background-color: #004630;
+  padding: 20px 0;
+}
+
+
+.footer-social-media a{
+  font-size:medium;
+  letter-spacing: 3px;
+}
+
+.footer-image{
+  width: 180px;
+}
+
+.footer-image img{
+  height: 80px;
+}
