@@ -1,5 +1,9 @@
 // Ni-Yara - Countdown
 let countDownDate = new Date("Jan 26, 2024 00:00:00").getTime();
+// let countDownDate = new Date("Jan 13, 2024 19:54:00").getTime();
+
+const container = document.getElementById('home');
+
 function stopCounter() {
   clearInterval(x)
 }
@@ -16,7 +20,9 @@ const x = setInterval(function () {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
-  if (days=== 0 &&hours === 0 && minutes === 0 && seconds === 0) {
+  if (days=== 0 &&hours === 0 && minutes === 0 && seconds === 0) 
+ 
+  {
     stopCounter();
      welcome();
    }
@@ -131,4 +137,4 @@ chatbotCloseBtn.addEventListener("click", () => document.body.classList.remove("
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 
 
-//responsive
+
