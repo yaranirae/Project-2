@@ -224,6 +224,18 @@ label #cancel {
   color: black;
 }
 
+.registration {
+  font-family: Barlow, sans-serif;
+  font-weight: 650;
+  font-size: 16px;
+  color: black;
+  padding: 9px 25px;
+  background-color: #dbff4a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /* Ni-Yara  Chatbot */
 
 .chatbot-toggler {
@@ -273,7 +285,7 @@ label #cancel {
   border-radius: 25px;
   transform-origin: bottom right;
   box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-    0 32px 64px -48px rgba(0, 0, 0, 0.5);
+  0 32px 64px -48px rgba(0, 0, 0, 0.5);
   transition: all 0.1s ease;
 }
 
@@ -576,7 +588,7 @@ footer {
   }
 }
 .round{
-   
+
   position: absolute;
   width: 15px;
   height: 15px;
@@ -591,11 +603,11 @@ footer {
 }
 @keyframes ani-1{
   34%{
-      transform: translate(57vw, 34vh);
+    transform: translate(57vw, 34vh);
   }
   to{
-      transform: translate(57vw, 95vh);
-  } 
+    transform: translate(57vw, 95vh);
+  }
 }
 .round:nth-child(2){
   opacity: 0.06;
@@ -604,10 +616,10 @@ footer {
 }
 @keyframes ani-2{
   70%{
-      transform: translate(37vw, 70vh);
+    transform: translate(37vw, 70vh);
   }
   to{
-      transform: translate(37vw, 95vh);
+    transform: translate(37vw, 95vh);
   }
 }
 .round:nth-child(3){
@@ -617,10 +629,10 @@ footer {
 }
 @keyframes ani-3{
   71%{
-      transform: translate(22vw,71vh);
+    transform: translate(22vw,71vh);
   }
   to{
-      transform: translate(20vw,95vh);
+    transform: translate(20vw,95vh);
   }
 }
 .round:nth-child(4){
@@ -630,10 +642,10 @@ footer {
 }
 @keyframes ani-4{
   73%{
-      transform: translate(51vw,73vh);
+    transform: translate(51vw,73vh);
   }
   to{
-      transform: translate(55vw,95vh);
+    transform: translate(55vw,95vh);
   }
 }
 .round:nth-child(5){
@@ -643,10 +655,10 @@ footer {
 }
 @keyframes ani-5{
   38%{
-      transform: translate(42vw,38vh);
+    transform: translate(42vw,38vh);
   }
   to{
-      transform: translate(45vw,95vh);
+    transform: translate(45vw,95vh);
   }
 }
 .round:nth-child(6){
@@ -656,10 +668,10 @@ footer {
 }
 @keyframes ani-6{
   57%{
-      transform: translate(83vw,57vh);
+    transform: translate(83vw,57vh);
   }
   to{
-      transform: translate(82vw,95vh);
+    transform: translate(82vw,95vh);
   }
 }
 .round:nth-child(7){
@@ -669,10 +681,10 @@ footer {
 }
 @keyframes ani-7{
   32%{
-      transform: translate(22vw,32vh);
+    transform: translate(22vw,32vh);
   }
   to{
-      transform: translate(26vw,95vh);
+    transform: translate(26vw,95vh);
   }
 }
 .round:nth-child(8){
@@ -682,10 +694,10 @@ footer {
 }
 @keyframes ani-8{
   50%{
-      transform: translate(6vw,50vh);
+    transform: translate(6vw,50vh);
   }
   to{
-      transform: translate(9vw,95vh);
+    transform: translate(9vw,95vh);
   }
 }
 .round:nth-child(9){
@@ -695,10 +707,10 @@ footer {
 }
 @keyframes ani-9{
   57%{
-      transform: translate(74vw,57vh);
+    transform: translate(74vw,57vh);
   }
   to{
-      transform: translate(77vw,95vh);
+    transform: translate(77vw,95vh);
   }
 }
 .round:nth-child(10){
@@ -708,10 +720,10 @@ footer {
 }
 @keyframes ani-10{
   51%{
-      transform: translate(31vw,51vh);
+    transform: translate(31vw,51vh);
   }
   to{
-      transform: translate(28vw,95vh);
+    transform: translate(28vw,95vh);
   }
 }
 .round:nth-child(11){
@@ -721,10 +733,10 @@ footer {
 }
 @keyframes ani-11{
   36%{
-      transform: translate(99vw,36vh);
+    transform: translate(99vw,36vh);
   }
   to{
-      transform: translate(96vw,95vh);
+    transform: translate(96vw,95vh);
   }
 }
 .round:nth-child(12){
@@ -734,10 +746,10 @@ footer {
 }
 @keyframes ani-12{
   78%{
-      transform: translate(54vw,78vh);
+    transform: translate(54vw,78vh);
   }
   to{
-      transform: translate(51vw,95vh);
+    transform: translate(51vw,95vh);
   }
 }
 .round:nth-child(13){
@@ -747,10 +759,10 @@ footer {
 }
 @keyframes ani-13{
   75%{
-      transform: translate(66vw,75vh);
+    transform: translate(66vw,75vh);
   }
   to{
-      transform: translate(68vw,95vh);
+    transform: translate(68vw,95vh);
   }
 }
 .round:nth-child(14){
@@ -760,23 +772,23 @@ footer {
 }
 @keyframes ani-14{
   50%{
-      transform: translate(77vw,50vh);
+    transform: translate(77vw,50vh);
   }
   to{
-      transform: translate(77vw,95vh);
+    transform: translate(77vw,95vh);
   }
 }
 .round:nth-child(15){
- 
+
   opacity: .9;
   transform: translate(33vw, -10px);
   animation: ani-15 18s -4s linear infinite;
 }
 @keyframes ani-15{
   68%{
-      transform: translate(29vw,68vh);
+    transform: translate(29vw,68vh);
   }
   to{
-      transform: translate(31vw,95vh);
+    transform: translate(31vw,95vh);
   }
 }
