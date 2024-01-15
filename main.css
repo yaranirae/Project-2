@@ -224,6 +224,18 @@ label #cancel {
   color: black;
 }
 
+.registration {
+  font-family: Barlow, sans-serif;
+  font-weight: 650;
+  font-size: 16px;
+  color: black;
+  padding: 9px 25px;
+  background-color: #dbff4a;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 /* Ni-Yara  Chatbot */
 
 .chatbot-toggler {
