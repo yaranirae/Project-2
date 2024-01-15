@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   box-sizing: border-box;
   font-family: Barlow, sans-serif;
@@ -11,41 +11,46 @@ body {
 }
 
 .back {
-	position: fixed;
+  position: fixed;
   left: 5rem;
   top: 5rem;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #dbff4a;
-	border-radius: 0.5rem;
-	padding: 0.5rem;
-	text-decoration: none;
-	transition: 0.2s ease-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dbff4a;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  z-index: 999;
 }
 
 .back span {
-	color: #005c40;
-	font-size: 2rem;
-	transition: 0.2s ease-out;
+  color: #005c40;
+  font-size: 2rem;
+  transition: 0.2s ease-out;
 }
 
 .back:hover {
-	background-color: #c0df46;
+  background-color: #c0df46;
 }
 .back:hover span {
-	transform: translateX(-4px);
+  transform: translateX(-4px);
 }
 .container {
-  width: 140vw;
-
-  margin: 50px 0;
-  display: flex;
-  justify-content: center;
+  width: 100vw;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding-top: 50px;
 }
 
 table {
   transition: 0.5s;
+  
+}
+.web {
+  margin: 0px auto;
 }
 tr {
   display: flex;
@@ -71,7 +76,7 @@ table td {
 .parent-line:nth-child(odd) {
   border-right: 2px dotted #259925;
 }
-.ff {
+.kindRow{
   border-top: 2px dotted #259925;
 }
 .texts {
@@ -83,6 +88,7 @@ table td {
 }
 .titel {
   display: block;
+  
 }
 
 .imgBx:hover .titel {

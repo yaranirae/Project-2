@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     obj.isOpen = true;
     let lineParentRow = table.insertRow(table.rows.length);
     let linesChildrenRow = table.insertRow(table.rows.length);
-    linesChildrenRow.classList.add("ff");
+    linesChildrenRow.classList.add("kindRow");
     let row = table.insertRow(table.rows.length);
     obj.subData.forEach((x, i) => {
       const newChild = `
@@ -83,19 +83,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
     return null;
   }
 });
-// window.onload = maxWindow;
-
-// function maxWindow() {
-//     window.moveTo(0, 0);
-
-//     if (document.all) {
-//         top.window.resizeTo(screen.availWidth, screen.availHeight);
-//     }
-
-//     else if (document.layers || document.getElementById) {
-//         if (top.window.outerHeight < screen.availHeight || top.window.outerWidth < screen.availWidth) {
-//             top.window.outerHeight = screen.availHeight;
-//             top.window.outerWidth = screen.availWidth;
-//         }
-//     }
-// }
