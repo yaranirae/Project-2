@@ -1,5 +1,9 @@
 // Ni-Yara - Countdown
 let countDownDate = new Date("Jan 26, 2024 00:00:00").getTime();
+// let countDownDate = new Date("Jan 15, 2024 10:24:00").getTime();
+
+const container = document.getElementById('home');
+
 function stopCounter() {
   clearInterval(x)
 }
@@ -16,7 +20,9 @@ const x = setInterval(function () {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
-  if (days=== 0 &&hours === 0 && minutes === 0 && seconds === 0) {
+  if (days=== 0 &&hours === 0 && minutes === 0 && seconds === 0) 
+ 
+  {
     stopCounter();
      welcome();
    }
@@ -25,10 +31,12 @@ const x = setInterval(function () {
 function welcome() {
   document.querySelector(".data-jan").innerHTML = ''
   document.querySelector(".time-content").innerHTML = ''
+  document.querySelector(".visit-us").innerHTML = ''
+
   let newWelcom = document.createElement("p");
   let chang = document.getElementById("changing");
   container.appendChild(newWelcom);
-  chang.innerHTML = 'Hoera! De open dagen zijn vandaag begonnen!'
+  chang.innerHTML = 'Hurrah! The open days started today!'
   newWelcom.classList.add("software-dev-open");
   
   
@@ -42,14 +50,14 @@ let greet;
 
 if  (hrs >= 6 && hrs <= 11.59)
  {
-   greet= "Goedemorgen ☀️";
+   greet= "Good Morning ☀️";
   }
 else if(hrs >= 12 && hrs <= 17.59){
   
-  greet= "Goedemiddag 🌇";
+  greet= "Good Afternoon 🌇";
 }
 else{
- greet= "Goedenavond 🌃";
+ greet= "Good Evening 🌃";
 }
 
 document.getElementById("TIME").innerHTML = `<br><p>${greet}</p>`;
@@ -131,4 +139,4 @@ chatbotCloseBtn.addEventListener("click", () => document.body.classList.remove("
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 
 
-//responsive
+
