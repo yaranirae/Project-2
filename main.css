@@ -792,3 +792,33 @@ footer {
     transform: translate(31vw,95vh);
   }
 }
+
+                .back {
+                  position: fixed;
+                  left: 5rem;
+                  top: 5rem;
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-color: cadetblue;
+                  border-radius: 0.5rem;
+                  padding: 0.5rem;
+                  text-decoration: none;
+                  transition: 0.2s ease-out;
+                  z-index: 999;
+                }
+        
+                .back span {
+                  color: goldenrod;
+                  font-size: 2rem;
+                  transition: 0.2s ease-out;
+                }
+        
+                .back:hover {
+                  background-color:chocolate;
+                }
+        
+                .back:hover span {
+                  transform: translateX(-4px);
+                  color:cadetblue;
+                }
