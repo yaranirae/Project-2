@@ -116,6 +116,7 @@ label #cancel {
   font-weight: 600;
 }
 
+
 .data-jan {
   font-size: 30px;
   color: white;
@@ -125,7 +126,12 @@ label #cancel {
   font-size: 20px;
   color: white;
 }
+.visit{
+  font-size: 30px;
+  font-weight: 650;
+  color: white;
 
+}
 .container .time-content {
   display: flex;
   column-gap: 30px;
@@ -569,40 +575,6 @@ footer {
     font-weight: bold;
   }
 }
-/* @media (max-width:1024)
-{
-    .section-opendag{
-    padding-top: 15px;
-    height: 100%;
-  }
-  .paragraph-title{
-    font-size: 2.2rem;
-  }
-  .information
-{
-  flex-direction: column;
-}
-.information1{
-  flex-direction: column;
-  width: 50%;
-  gap: 5px;
-}
-.information2 p{
-  font-size: 1.6em;
-  width: 100%;
-}
-.image{
-width: 100%;
-}
-.image img{
-  width: 100%;
-}
-.image p{
-  font-size: 1.6em;
-  font-weight:bold;
-
-}
-} */
 .round{
    
   position: absolute;
