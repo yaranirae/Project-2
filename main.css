@@ -13,10 +13,6 @@ html {
   list-style: none;
 }
 
-/* body{
-    background-color: #004630;
-} */
-
 a {
   font-family: Barlow, sans-serif;
   font-weight: 600;
@@ -116,7 +112,6 @@ label #cancel {
   font-weight: 600;
 }
 
-
 .data-jan {
   font-size: 30px;
   color: white;
@@ -126,11 +121,10 @@ label #cancel {
   font-size: 20px;
   color: white;
 }
-.visit{
+.visit {
   font-size: 30px;
-  font-weight: 650;
+  font-weight: 650px;
   color: white;
-
 }
 .container .time-content {
   display: flex;
@@ -208,7 +202,8 @@ label #cancel {
 .image p {
   font-size: 25px;
   color: #0f2b22;
-}
+  font-weight: bold;
+  }
 
 .information2 button {
   margin: 25px 0;
@@ -285,7 +280,7 @@ label #cancel {
   border-radius: 25px;
   transform-origin: bottom right;
   box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-  0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    0 32px 64px -48px rgba(0, 0, 0, 0.5);
   transition: all 0.1s ease;
 }
 
@@ -521,6 +516,14 @@ footer {
   }
   .visit-us {
     font-size: 25px;
+
+
+  }
+  .visit{
+    font-size: 40px;
+    /* font-weight: 300px;
+    display: flex;
+    justify-content: center; */
   }
   .time {
     font-size: 20px;
@@ -539,7 +542,7 @@ footer {
     gap: 5px;
   }
   .information2 p {
-    font-size: 1.2em;
+    font-size: 2em;
     width: 100%;
   }
   .image {
@@ -549,7 +552,7 @@ footer {
     width: 100%;
   }
   .image p {
-    font-size: 1.2em;
+    font-size: 2em;
     font-weight: bold;
   }
   /* .......... */
@@ -583,242 +586,241 @@ footer {
     width: 100%;
   }
   .image p {
-    font-size: 1.6em;
+    font-size: 1.3em;
     font-weight: bold;
   }
 }
-.round{
 
+.round {
   position: absolute;
   width: 15px;
   height: 15px;
-  background:  #dbff4a;
+  background: #dbff4a;
   border-radius: 50%;
   filter: drop-shadow(0 0 20px #dbff4a);
 }
-.round:nth-child(1){
+.round:nth-child(1) {
   opacity: 0.6;
-  transform: translate(56vw,-10px);
+  transform: translate(56vw, -10px);
   animation: ani-1 22s -16s linear infinite;
 }
-@keyframes ani-1{
-  34%{
+@keyframes ani-1 {
+  34% {
     transform: translate(57vw, 34vh);
   }
-  to{
+  to {
     transform: translate(57vw, 95vh);
   }
 }
-.round:nth-child(2){
+.round:nth-child(2) {
   opacity: 0.06;
-  transform: translate(38vw,-10px);
+  transform: translate(38vw, -10px);
   animation: ani-2 17s -20s linear infinite;
 }
-@keyframes ani-2{
-  70%{
+@keyframes ani-2 {
+  70% {
     transform: translate(37vw, 70vh);
   }
-  to{
+  to {
     transform: translate(37vw, 95vh);
   }
 }
-.round:nth-child(3){
+.round:nth-child(3) {
   opacity: 0.7;
-  transform: translate(18vw,-10px);
+  transform: translate(18vw, -10px);
   animation: ani-3 10s -24s linear infinite;
 }
-@keyframes ani-3{
-  71%{
-    transform: translate(22vw,71vh);
+@keyframes ani-3 {
+  71% {
+    transform: translate(22vw, 71vh);
   }
-  to{
-    transform: translate(20vw,95vh);
+  to {
+    transform: translate(20vw, 95vh);
   }
 }
-.round:nth-child(4){
-  opacity: .7;
-  transform: translate(59vw,-10px);
+.round:nth-child(4) {
+  opacity: 0.7;
+  transform: translate(59vw, -10px);
   animation: ani-4 25s -3s linear infinite;
 }
-@keyframes ani-4{
-  73%{
-    transform: translate(51vw,73vh);
+@keyframes ani-4 {
+  73% {
+    transform: translate(51vw, 73vh);
   }
-  to{
-    transform: translate(55vw,95vh);
+  to {
+    transform: translate(55vw, 95vh);
   }
 }
-.round:nth-child(5){
+.round:nth-child(5) {
   opacity: 0.4;
-  transform: translate(47vw,-10px);
+  transform: translate(47vw, -10px);
   animation: ani-5 20s -18s linear infinite;
 }
-@keyframes ani-5{
-  38%{
-    transform: translate(42vw,38vh);
+@keyframes ani-5 {
+  38% {
+    transform: translate(42vw, 38vh);
   }
-  to{
-    transform: translate(45vw,95vh);
+  to {
+    transform: translate(45vw, 95vh);
   }
 }
-.round:nth-child(6){
-  opacity: .6;
-  transform: translate(82vw,-10px);
+.round:nth-child(6) {
+  opacity: 0.6;
+  transform: translate(82vw, -10px);
   animation: ani-6 16s -19s linear infinite;
 }
-@keyframes ani-6{
-  57%{
-    transform: translate(83vw,57vh);
+@keyframes ani-6 {
+  57% {
+    transform: translate(83vw, 57vh);
   }
-  to{
-    transform: translate(82vw,95vh);
+  to {
+    transform: translate(82vw, 95vh);
   }
 }
-.round:nth-child(7){
+.round:nth-child(7) {
   opacity: 0.1;
-  transform: translate(30vw,-10px);
+  transform: translate(30vw, -10px);
   animation: ani-7 17s -27s linear infinite;
 }
-@keyframes ani-7{
-  32%{
-    transform: translate(22vw,32vh);
+@keyframes ani-7 {
+  32% {
+    transform: translate(22vw, 32vh);
   }
-  to{
-    transform: translate(26vw,95vh);
+  to {
+    transform: translate(26vw, 95vh);
   }
 }
-.round:nth-child(8){
-  opacity: .5;
-  transform: translate(11vw,-10px);
+.round:nth-child(8) {
+  opacity: 0.5;
+  transform: translate(11vw, -10px);
   animation: ani-8 10s -19s linear infinite;
 }
-@keyframes ani-8{
-  50%{
-    transform: translate(6vw,50vh);
+@keyframes ani-8 {
+  50% {
+    transform: translate(6vw, 50vh);
   }
-  to{
-    transform: translate(9vw,95vh);
+  to {
+    transform: translate(9vw, 95vh);
   }
 }
-.round:nth-child(9){
-  opacity: .5;
-  transform: translate(81vw,-10px);
+.round:nth-child(9) {
+  opacity: 0.5;
+  transform: translate(81vw, -10px);
   animation: ani-9 13s -8s linear infinite;
 }
-@keyframes ani-9{
-  57%{
-    transform: translate(74vw,57vh);
+@keyframes ani-9 {
+  57% {
+    transform: translate(74vw, 57vh);
   }
-  to{
-    transform: translate(77vw,95vh);
+  to {
+    transform: translate(77vw, 95vh);
   }
 }
-.round:nth-child(10){
-  opacity: .7;
+.round:nth-child(10) {
+  opacity: 0.7;
 
   animation: ani-10 24s -25s linear infinite;
 }
-@keyframes ani-10{
-  51%{
-    transform: translate(31vw,51vh);
+@keyframes ani-10 {
+  51% {
+    transform: translate(31vw, 51vh);
   }
-  to{
-    transform: translate(28vw,95vh);
+  to {
+    transform: translate(28vw, 95vh);
   }
 }
-.round:nth-child(11){
-  opacity: .5;
-  transform: translate(92vw,-10px);
+.round:nth-child(11) {
+  opacity: 0.5;
+  transform: translate(92vw, -10px);
   animation: ani-11 27s -18s linear infinite;
 }
-@keyframes ani-11{
-  36%{
-    transform: translate(99vw,36vh);
+@keyframes ani-11 {
+  36% {
+    transform: translate(99vw, 36vh);
   }
-  to{
-    transform: translate(96vw,95vh);
+  to {
+    transform: translate(96vw, 95vh);
   }
 }
-.round:nth-child(12){
-  opacity: .9;
-  transform: translate(49vw,-10px);
+.round:nth-child(12) {
+  opacity: 0.9;
+  transform: translate(49vw, -10px);
   animation: ani-12 16s -10s linear infinite;
 }
-@keyframes ani-12{
-  78%{
-    transform: translate(54vw,78vh);
+@keyframes ani-12 {
+  78% {
+    transform: translate(54vw, 78vh);
   }
-  to{
-    transform: translate(51vw,95vh);
+  to {
+    transform: translate(51vw, 95vh);
   }
 }
-.round:nth-child(13){
+.round:nth-child(13) {
   opacity: 0.3;
-  transform: translate(69vw,-10px);
+  transform: translate(69vw, -10px);
   animation: ani-13 11s -27s linear infinite;
 }
-@keyframes ani-13{
-  75%{
-    transform: translate(66vw,75vh);
+@keyframes ani-13 {
+  75% {
+    transform: translate(66vw, 75vh);
   }
-  to{
-    transform: translate(68vw,95vh);
+  to {
+    transform: translate(68vw, 95vh);
   }
 }
-.round:nth-child(14){
-  opacity: .2;
-  transform: translate(78vw,-10px);
+.round:nth-child(14) {
+  opacity: 0.2;
+  transform: translate(78vw, -10px);
   animation: ani-14 18s -4s linear infinite;
 }
-@keyframes ani-14{
-  50%{
-    transform: translate(77vw,50vh);
+@keyframes ani-14 {
+  50% {
+    transform: translate(77vw, 50vh);
   }
-  to{
-    transform: translate(77vw,95vh);
+  to {
+    transform: translate(77vw, 95vh);
   }
 }
-.round:nth-child(15){
-
-  opacity: .9;
+.round:nth-child(15) {
+  opacity: 0.9;
   transform: translate(33vw, -10px);
   animation: ani-15 18s -4s linear infinite;
 }
-@keyframes ani-15{
-  68%{
-    transform: translate(29vw,68vh);
+@keyframes ani-15 {
+  68% {
+    transform: translate(29vw, 68vh);
   }
-  to{
-    transform: translate(31vw,95vh);
+  to {
+    transform: translate(31vw, 95vh);
   }
 }
 
-                .back {
-                  position: fixed;
-                  left: 5rem;
-                  top: 5rem;
-                  display: inline-flex;
-                  align-items: center;
-                  justify-content: center;
-                  background-color: cadetblue;
-                  border-radius: 0.5rem;
-                  padding: 0.5rem;
-                  text-decoration: none;
-                  transition: 0.2s ease-out;
-                  z-index: 999;
-                }
-        
-                .back span {
-                  color: goldenrod;
-                  font-size: 2rem;
-                  transition: 0.2s ease-out;
-                }
-        
-                .back:hover {
-                  background-color:chocolate;
-                }
-        
-                .back:hover span {
-                  transform: translateX(-4px);
-                  color:cadetblue;
-                }
+.back {
+  position: fixed;
+  left: 5rem;
+  top: 5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: cadetblue;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  transition: 0.2s ease-out;
+  z-index: 999;
+}
+
+.back span {
+  color: goldenrod;
+  font-size: 2rem;
+  transition: 0.2s ease-out;
+}
+
+.back:hover {
+  background-color: chocolate;
+}
+
+.back:hover span {
+  transform: translateX(-4px);
+  color: cadetblue;
+}
