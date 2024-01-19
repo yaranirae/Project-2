@@ -20,40 +20,32 @@ const ENEMY_SPEED = 20
 
 let isJumping = true
 
-loadRoot('https://i.imgur.com/')
-loadSprite('coin', 'wbKxhcd.png')
-loadSprite('evil-shroom', 'KPO3fR9.png')
-loadSprite('brick', 'pogC9x5.png')
-loadSprite('block', 'M6rwarW.png')
-loadSprite('mario', 'Wb1qfhK.png')
-loadSprite('mushroom', '0wMd92p.png')
-loadSprite('surprise', 'gesQ1KP.png')
-loadSprite('unboxed', 'bdrLpi6.png')
-loadSprite('pipe-top-left', 'ReTPiWY.png')
-loadSprite('pipe-top-right', 'hj2GK4n.png')
-loadSprite('pipe-bottom-left', 'c1cYSbt.png')
-loadSprite('pipe-bottom-right', 'nqQ79eI.png')
-loadSprite('ja-block', 'bLmIfOx.png')
-loadSprite('nee-block', 'hF3mbeX.png')
-loadSprite('wall', 'pogC9x5.png')
+loadSprite("coin", "images/coin.png")
+loadSprite("evil-shroom", "images/evil.png")
+loadSprite("block", "images/block.png")
+loadSprite("mario", "images/mario.png")
+loadSprite("mushroom", "images/mushroom.png")
+loadSprite("unboxed", "images/unboxed.png")
+loadSprite("pipe-top-left", "images/pipe-top-left.png")
+loadSprite("pipe-top-right", "images/pipe-top-right.png")
+loadSprite("pipe-bottom-left", "images/pipe-bottom-left.png")
+loadSprite("pipe-bottom-right", "images/pipe-bottom-right.png")
+loadSprite("ja-block", "images/ja-block.png")
+loadSprite("nee-block", "images/nee-block.png")
+loadSprite("brick", "images/brick.png")
 
-loadSprite('blue-block', 'fVscIbn.png')
-loadSprite('blue-brick', '3e5YRQd.png')
-loadSprite('blue-steel', 'gqVoI2b.png')
-loadSprite('blue-evil-shroom', 'SvV4ueD.png')
-loadSprite('blue-surprise', 'RMqCc1G.png')
-loadSprite('vraag1', 'VHy4zKc.png')
-loadSprite('vraag2', '2ZbD3Qd.png')
-loadSprite('vraag3', '0CFAFcf.png')
-loadSprite('vraag4', 'WuYrJEe.png')
-loadSprite('vraag5', '7NZxVgJ.png')
-loadSprite('finish-line', 'KPA4MkY.png')
-loadSprite('exit', 'i9l631x.png')
-loadSprite('gebruik', '7AUbZSH.png')
-loadSprite('sign', 'ERZ9d6D.png')
-loadSprite('info', 'K1vlxxE.png')
-
-
+loadSprite("blue-block", "images/blue-block.png")
+loadSprite("blue-brick", "images/blue-brick.png")
+loadSprite("vraag1", "images/vraag-1.png")
+loadSprite("vraag2", "images/vraag-2.png")
+loadSprite("vraag3", "images/vraag-3.png")
+loadSprite("vraag4", "images/vraag-4.png")
+loadSprite("vraag5", "images/vraag-5.png")
+loadSprite("finish-line", "images/finish-line.png")
+loadSprite("exit", "images/exit.png")
+loadSprite("gebruik", "images/gebruik.png")
+loadSprite("sign", "images/sign.png")
+loadSprite("info", "images/info.png")
 
 
 
@@ -63,10 +55,10 @@ scene("game", ({ level, score }) => {
     const maps = [
         [
             '£                                             £',
-            '£      >                  [                   £',
+            '£      >                   [                  £',
             '£                                             £',
             '£                                             £',
-            '£                 |                           £',
+            '£                  |                          £',
             '£                                             £',
             '£                                         <   £',
             '£                                             £',
@@ -145,10 +137,9 @@ scene("game", ({ level, score }) => {
     const levelCfg = {
         width: 20,
         height: 20,
+
         '=': [sprite('block'), solid()],
         '$': [sprite('coin'), 'coin'],
-        '%': [sprite('surprise'), solid(), 'coin-surprise'],
-        '*': [sprite('surprise'), solid(), 'mushroom-surprise'],
         '}': [sprite('unboxed'), solid()],
         '(': [sprite('pipe-bottom-left'), solid(), scale(0.5)],
         ')': [sprite('pipe-bottom-right'), solid(), scale(0.5)],
@@ -158,17 +149,14 @@ scene("game", ({ level, score }) => {
         '#': [sprite('mushroom'), solid(), 'mushroom', body()],
         '!': [sprite('blue-block'), solid(), scale(0.5)],
         '£': [sprite('blue-brick'), solid(), scale(0.5)],
-        'z': [sprite('blue-evil-shroom'), solid(), scale(0.5), 'dangerous'],
-        '@': [sprite('blue-surprise'), solid(), scale(0.5), 'blue-surprise'],
-        'x': [sprite('blue-steel'), solid(), scale(0.5)],
-        'q': [sprite('vraag1'), scale(0.164)],
-        '€': [sprite('vraag2'), scale(0.164)],
-        'e': [sprite('vraag3'), scale(0.164)],
-        'é': [sprite('vraag4'), scale(0.164)],
-        'j': [sprite('vraag5'), scale(0.22)],
+        'q': [sprite('vraag1'), scale(0.16)],
+        '€': [sprite('vraag2'), scale(0.16)],
+        'e': [sprite('vraag3'), scale(0.16)],
+        'é': [sprite('vraag4'), scale(0.16)],
+        'j': [sprite('vraag5'), scale(0.16)],
         '/': [sprite('ja-block'), solid(), scale(0.022), 'ja-block-coin'],
         '_': [sprite('nee-block'), solid(), scale(0.022), 'nee-block-mushroom'],
-        '~': [sprite('wall'), solid()],
+        '~': [sprite('brick'), solid()],
         'l': [sprite('finish-line'), scale(0.09), 'finish-line'],
         '<': [sprite('exit'), scale(0.042)],
         '>': [sprite('gebruik'), scale(0.17)],
