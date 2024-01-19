@@ -20,9 +20,7 @@ const x = setInterval(function () {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
-  if (days=== 0 &&hours === 0 && minutes === 0 && seconds === 0)
-
-  {
+  if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
     stopCounter();
     welcome();
   }
@@ -48,16 +46,15 @@ let mins = myDate.getMinutes();
 let greet;
 
 
-if  (hrs >= 6 && hrs <= 11.59)
-{
-  greet= "Good Morning ☀️";
+if (hrs >= 6 && hrs <= 11.59) {
+  greet = "Good Morning ☀️";
 }
-else if(hrs >= 12 && hrs <= 17.59){
+else if (hrs >= 12 && hrs <= 17.59) {
 
-  greet= "Good Afternoon 🌇";
+  greet = "Good Afternoon 🌇";
 }
-else{
-  greet= "Good Evening 🌃";
+else {
+  greet = "Good Evening 🌃";
 }
 
 document.getElementById("TIME").innerHTML = `<br><p>${greet}</p>`;
@@ -67,8 +64,8 @@ document.getElementById("TIME").classList.add('software-dev-open')
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox");
-const chatbotToggler= document.querySelector(".chatbot-toggler");
-const chatbotCloseBtn= document.querySelector(".close-btn")
+const chatbotToggler = document.querySelector(".chatbot-toggler");
+const chatbotCloseBtn = document.querySelector(".close-btn")
 
 let userMessage;
 const API_KEY = "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";
@@ -82,7 +79,7 @@ const createChatLi = (message, className) => {
   return chatLi;
 }
 
-const generateResponse = (incomingChatLi) =>{
+const generateResponse = (incomingChatLi) => {
   const API_URL = "https://api.openai.com/v1/chat/completions";
   const messageElement = incomingChatLi.querySelector("p");
 
@@ -94,7 +91,7 @@ const generateResponse = (incomingChatLi) =>{
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo-0613",
-      messages: [{role: "user", content: userMessage}]
+      messages: [{ role: "user", content: userMessage }]
     })
   }
 
@@ -107,34 +104,34 @@ const generateResponse = (incomingChatLi) =>{
 }
 const handleChat = () => {
   userMessage = chatInput.value.trim();
-  if(!userMessage) return;
+  if (!userMessage) return;
   chatInput.value = "";
   chatInput.style.height = `${inputInitHeight}px`;
 
   chatbox.appendChild(createChatLi(userMessage, "outgoing"));
-  chatbox.scrollTo(0,chatbox.scrollHeight);
+  chatbox.scrollTo(0, chatbox.scrollHeight);
 
   setTimeout(() => {
     const incomingChatLi = createChatLi("Typing...", "incoming")
     chatbox.appendChild(incomingChatLi);
-    chatbox.scrollTo(0,chatbox.scrollHeight);
+    chatbox.scrollTo(0, chatbox.scrollHeight);
     generateResponse(incomingChatLi);
-  },600);
+  }, 600);
 }
 
-chatInput.addEventListener("input", () =>{
+chatInput.addEventListener("input", () => {
   chatInput.style.height = `${inputInitHeight}px`;
   chatInput.style.height = `${chatInput.scrollHeight}px`;
 })
 
-chatInput.addEventListener("keydown", (e) =>{
-  if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
+chatInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && !e.shiftKey && window.innerWidth > 800) {
     e.preventDefault();
     handleChat();
   }
 })
 
-sendChatBtn.addEventListener("click", handleChat );
+sendChatBtn.addEventListener("click", handleChat);
 chatbotCloseBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
 

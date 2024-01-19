@@ -29,6 +29,98 @@
 
     <script src="https://kaboomjs.com/lib/0.5.0/kaboom.js"></script>
     <script src="game.js"></script>
+
+
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+
+    <script>
+        const coords = { x: 0, y: 0 };
+        const circles = document.querySelectorAll(".circle");
+
+        const colors = [
+            "#006445",
+            "#3b8d49",
+            "#419149",
+            "#4c994a",
+            "#509c4a",
+            "#59a24a",
+            "#5fa74a",
+            "#66ac4a",
+            "#6cb14a",
+            "#73b64a",
+            "#7abb4a",
+            "#83c14a",
+            "#8cc74a",
+            "#93cc4a",
+            "#9cd24a",
+            "#a2d64a",
+            "#a8db4a",
+            "#b0e14a",
+            "#b6e54a",
+            "#c1ed4a",
+            "#c9f34a",
+            "#d4fa4a"
+        ];
+
+
+        circles.forEach(function (circle, index) {
+            circle.x = 0;
+            circle.y = 0;
+            circle.style.backgroundColor = colors[index % colors.length];
+        });
+
+        window.addEventListener("mousemove", function (e) {
+            coords.x = e.clientX;
+            coords.y = e.clientY;
+
+        });
+
+        function animateCircles() {
+
+            let x = coords.x;
+            let y = coords.y;
+
+            circles.forEach(function (circle, index) {
+                circle.style.left = x - 12 + "px";
+                circle.style.top = y - 12 + "px";
+
+                circle.style.scale = (circles.length - index) / circles.length;
+
+                circle.x = x;
+                circle.y = y;
+
+                const nextCircle = circles[index + 1] || circles[0];
+                x += (nextCircle.x - x) * 0.3;
+                y += (nextCircle.y - y) * 0.3;
+            });
+
+            requestAnimationFrame(animateCircles);
+        }
+
+        animateCircles();
+
+    </script>
+
+
 </body>
 
 </html>

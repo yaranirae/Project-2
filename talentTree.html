@@ -1,51 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="./talentScript.js" defer></script>
-    <link rel="stylesheet" href="talentStyle.css" />
-    <link rel="icon" type="image/logo" href="images/logo1.jpeg">
-    <link href="https://fonts.cdnfonts.com/css/sumptuous" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <title>Talent Tree</title>
-  </head>
-  <body>
-    <a href="index.html" class="back">
-      <span class="material-symbols-outlined">
-        arrow_back
-        </span>
-    </a>
-    <section>
-      <div class="color"></div>
-      <div class="color"></div>
-      <div class="color"></div>
-      <div class="box">
-        <div class="square" style="--i:0"></div>
-        <div class="square" style="--i:1"></div>
-        <div class="square" style="--i:2"></div>
-        <div class="square" style="--i:3"></div>
-        <div class="square" style="--i:4"></div>
-      </div>
-    </section>
-      <div class="container">
-        <table class="web">
-          <tr>
-          </tr>
-          <tr>
-            <td>
-              <div id="1" name="web" class="imgBx">
-                <p class="titel texts">web</p>
-                <p class="description texts">
-                  "Web" means World Wide Web: global system of interconnected
-                  internet pages.
-                </p>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
-    
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="./talentScript.js" defer></script>
+  <link rel="stylesheet" href="talentStyle.css" />
+  <link rel="icon" type="image/logo" href="images/logo1.jpeg">
+  <link href="https://fonts.cdnfonts.com/css/sumptuous" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <title>Talent Tree</title>
+</head>
+
+<body>
+  <a href="index.html" class="back">
+    <span class="material-symbols-outlined">
+      arrow_back
+    </span>
+  </a>
+  <section>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="box">
+      <div class="square" style="--i:0"></div>
+      <div class="square" style="--i:1"></div>
+      <div class="square" style="--i:2"></div>
+      <div class="square" style="--i:3"></div>
+      <div class="square" style="--i:4"></div>
+    </div>
+  </section>
+  <div class="container">
+    <table class="web">
+      <tr>
+      </tr>
+      <tr>
+        <td>
+          <div id="1" name="web" class="imgBx">
+            <p class="titel texts">web</p>
+            <p class="description texts">
+              "Web" means World Wide Web: global system of interconnected
+              internet pages.
+            </p>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <script>
+    const coords = { x: 0, y: 0 };
+    const circles = document.querySelectorAll(".circle");
+
+    const colors = [
+      "#006445",
+      "#3b8d49",
+      "#419149",
+      "#4c994a",
+      "#509c4a",
+      "#59a24a",
+      "#5fa74a",
+      "#66ac4a",
+      "#6cb14a",
+      "#73b64a",
+      "#7abb4a",
+      "#83c14a",
+      "#8cc74a",
+      "#93cc4a",
+      "#9cd24a",
+      "#a2d64a",
+      "#a8db4a",
+      "#b0e14a",
+      "#b6e54a",
+      "#c1ed4a",
+      "#c9f34a",
+      "#d4fa4a"
+    ];
+
+
+    circles.forEach(function (circle, index) {
+      circle.x = 0;
+      circle.y = 0;
+      circle.style.backgroundColor = colors[index % colors.length];
+    });
+
+    window.addEventListener("mousemove", function (e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+
+    });
+
+    function animateCircles() {
+
+      let x = coords.x;
+      let y = coords.y;
+
+      circles.forEach(function (circle, index) {
+        circle.style.left = x - 12 + "px";
+        circle.style.top = y - 12 + "px";
+
+        circle.style.scale = (circles.length - index) / circles.length;
+
+        circle.x = x;
+        circle.y = y;
+
+        const nextCircle = circles[index + 1] || circles[0];
+        x += (nextCircle.x - x) * 0.3;
+        y += (nextCircle.y - y) * 0.3;
+      });
+
+      requestAnimationFrame(animateCircles);
+    }
+
+    animateCircles();
+
+  </script>
+
+</body>
+
 </html>
