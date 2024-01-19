@@ -1,6 +1,6 @@
 // Ni-Yara - Countdown
 let countDownDate = new Date("Jan 26, 2024 00:00:00").getTime();
-// let countDownDate = new Date("Jan 15, 2024 10:24:00").getTime();
+// let countDownDate = new Date("Jan 15, 2024 20:11:00").getTime();
 
 const container = document.getElementById('home');
 
