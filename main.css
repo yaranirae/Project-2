@@ -397,13 +397,23 @@ label #cancel {
   visibility: visible;
 }
 
-@media (max-width: 490px) {
+@media (max-width: 860px) {
+ 
+  .chatbot ul
+  {
+    position: absolute;
+    left: 5px;
+    bottom: 200px;
+    background-color: white;
+    
+  }
+ 
   .chatbot {
     right: 0;
     bottom: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 0;
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
   }
   .chatbot .chatbox {
     height: 90%;

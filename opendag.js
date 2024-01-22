@@ -34,7 +34,7 @@ function welcome() {
   let newWelcom = document.createElement("p");
   let chang = document.getElementById("changing");
   container.appendChild(newWelcom);
-  chang.innerHTML = 'Hurrah! The open days started today!'
+  chang.innerHTML = 'Hurray! The open days have started today!🥳🥳'
   newWelcom.classList.add("software-dev-open");
 
 
