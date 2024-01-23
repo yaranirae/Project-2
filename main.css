@@ -153,7 +153,7 @@ label #cancel {
   font-size: 12px;
 }
 
-/* Raghda */
+/* information Open days */
 
 .section-opendag {
   /* margin-bottom: 100px; */
@@ -205,7 +205,7 @@ label #cancel {
   font-weight: bold;
   }
 
-.information2 button {
+.information2 .registration {
   margin: 25px 0;
 }
 
@@ -397,32 +397,7 @@ label #cancel {
   visibility: visible;
 }
 
-@media (max-width: 860px) {
- 
-  .chatbot ul
-  {
-    position: absolute;
-    left: 5px;
-    bottom: 200px;
-    background-color: white;
-    
-  }
- 
-  .chatbot {
-    right: 0;
-    bottom: 0;
-    width: 80%;
-    height: 80%;
-    border-radius: 25px;
-  }
-  .chatbot .chatbox {
-    height: 90%;
-  }
-  .chatbot header span {
-    display: block;
-  }
-}
-/* ................................... */
+
 
 .footer-container {
   max-width: 1300px;
@@ -454,11 +429,31 @@ footer {
 }
 
 /* resonsive */
-
 @media (max-width: 860px) {
-  /* .tcr-navbar{
-    width: 70%;
-  } */
+ 
+  .chatbot ul
+  {
+    position: absolute;
+    left: 5px;
+    bottom: 200px;
+    background-color: white;
+    
+  }
+ 
+  .chatbot {
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+    border-radius: 25px;
+  }
+  .chatbot .chatbox {
+    height: 90%;
+  }
+  .chatbot header span {
+    display: block;
+  }
+
   .tcr-logo img {
     width: 120px;
     height: 60px;
@@ -531,9 +526,6 @@ footer {
   }
   .visit{
     font-size: 40px;
-    /* font-weight: 300px;
-    display: flex;
-    justify-content: center; */
   }
   .time {
     font-size: 20px;
