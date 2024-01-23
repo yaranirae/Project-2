@@ -123,7 +123,7 @@ label #cancel {
 }
 .visit {
   font-size: 30px;
-  font-weight: 650px;
+  font-weight: 650;
   color: white;
 }
 .container .time-content {
@@ -229,6 +229,7 @@ label #cancel {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transform: translateX(-17%);
 }
 
 /* Ni-Yara  Chatbot */
@@ -497,7 +498,7 @@ footer {
     font-size: 25px;
   }
   #check:checked ~ ul {
-    left: 0px;
+    left: 0;
   }
   #check:checked ~ label #btn {
     display: none;
