@@ -20,32 +20,33 @@ const ENEMY_SPEED = 20
 
 let isJumping = true
 
-loadSprite("coin", "images/coin.png")
-loadSprite("evil-shroom", "images/evil.png")
-loadSprite("block", "images/block.png")
-loadSprite("mario", "images/mario.png")
-loadSprite("mushroom", "images/mushroom.png")
-loadSprite("unboxed", "images/unboxed.png")
-loadSprite("pipe-top-left", "images/pipe-top-left.png")
-loadSprite("pipe-top-right", "images/pipe-top-right.png")
-loadSprite("pipe-bottom-left", "images/pipe-bottom-left.png")
-loadSprite("pipe-bottom-right", "images/pipe-bottom-right.png")
-loadSprite("ja-block", "images/ja-block.png")
-loadSprite("nee-block", "images/nee-block.png")
-loadSprite("brick", "images/brick.png")
+loadSprite('coin', 'images/coin.png')
+loadSprite('evil-shroom', 'images/evil.png')
+loadSprite('block', 'images/block.png')
+loadSprite('mario', 'images/mario.png')
+loadSprite('mushroom', 'images/mushroom.png')
+loadSprite('unboxed', 'images/unboxed.png')
+loadSprite('pipe-top-left', 'images/pipe-top-left.png')
+loadSprite('pipe-top-right', 'images/pipe-top-right.png')
+loadSprite('pipe-bottom-left', 'images/pipe-bottom-left.png')
+loadSprite('pipe-bottom-right', 'images/pipe-bottom-right.png')
+loadSprite('ja-block', 'images/ja-block.png')
+loadSprite('nee-block', 'images/nee-block.png')
+loadSprite('brick', 'images/brick.png')
 
-loadSprite("blue-block", "images/blue-block.png")
-loadSprite("blue-brick", "images/blue-brick.png")
-loadSprite("vraag1", "images/vraag-1.png")
-loadSprite("vraag2", "images/vraag-2.png")
-loadSprite("vraag3", "images/vraag-3.png")
-loadSprite("vraag4", "images/vraag-4.png")
-loadSprite("vraag5", "images/vraag-5.png")
-loadSprite("finish-line", "images/finish-line.png")
-loadSprite("exit", "images/exit.png")
-loadSprite("gebruik", "images/gebruik.png")
-loadSprite("sign", "images/sign.png")
-loadSprite("info", "images/info.png")
+loadSprite('blue-block', 'images/blue-block.png')
+loadSprite('blue-brick', 'images/blue-brick.png')
+loadSprite('vraag1', 'images/vraag-1.png')
+loadSprite('vraag2', 'images/vraag-2.png')
+loadSprite('vraag3', 'images/vraag-3.png')
+loadSprite('vraag4', 'images/vraag-4.png')
+loadSprite('vraag5', 'images/vraag-5.png')
+loadSprite('finish-line', 'images/finish-line.png')
+loadSprite('exit', 'images/exit.png')
+loadSprite('gebruik', 'images/gebruik.png')
+loadSprite('sign', 'images/sign.png')
+loadSprite('info', 'images/info.png')
+loadSprite('blue-evil', 'images/blue-evil.png')
 
 
 
@@ -85,12 +86,12 @@ scene("game", ({ level, score }) => {
             '£                                                  £',
             '£                                                  £',
             '£                                                  £',
-            '£  €                                               £',
-            '£                                                  £',
-            '£                   !/!_!               x x        £',
-            '£                                     x x x        £',
-            '£                                   x x x x  x   -+£',
-            '£                          z   z  x x x x x  x   ()£',
+            '£  €                                    !          £',
+            '£                                      !!          £',
+            '£                   !/!_!             !!!          £',
+            '£                                    !!!!          £',
+            '£                                   !!!!!  !    -+ £',
+            '£                          z   z  !!!!!!!  !    () £',
             '£!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
         ],
         [
@@ -109,12 +110,12 @@ scene("game", ({ level, score }) => {
             '£                                                  £',
             '£                                                  £',
             '£                   /  _                           £',
-            '£  é                                               £',
-            '£                                                  £',
-            '£                  !!!!!!               x x        £',
-            '£                                     x x x        £',
-            '£                                   x x x x  x   -+£',
-            '£                          z   z  x x x x x  x   ()£',
+            '£  é                                   !           £',
+            '£                                     !!           £',
+            '£                  !!!!!!            !!!           £',
+            '£                                   !!!!           £',
+            '£                                  !!!!!  !     -+ £',
+            '£                          z   z !!!!!!!  !     () £',
             '£!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!',
         ],
         [
@@ -161,7 +162,8 @@ scene("game", ({ level, score }) => {
         '<': [sprite('exit'), scale(0.042)],
         '>': [sprite('gebruik'), scale(0.17)],
         '|': [sprite('sign'), scale(0.134)],
-        '[': [sprite('info'), scale(0.18)]
+        '[': [sprite('info'), scale(0.18)],
+        'z': [sprite('blue-evil'), scale(0.5), solid(), 'dangerous']
 
     }
 
@@ -235,22 +237,9 @@ scene("game", ({ level, score }) => {
     })
 
 
-
-    player.on("headbump", (obj) => {
-        if (obj.is('nee-block-mushroom')) {
-            gameLevel.spawn('}', obj.gridPos.sub(0, 0))
-
-        }
-    })
-
-
-
-
-
-
     player.collides('mushroom', (m) => {
         destroy(m)
-        player.biggify(6)
+        player.biggify(4)
     })
 
 
@@ -262,7 +251,7 @@ scene("game", ({ level, score }) => {
     player.collides('coin', (c) => {
         destroy(c)
         scoreLabel.value++
-        scoreLabel.text = scoreLabel.values
+        scoreLabel.text = scoreLabel.value
     })
 
 
@@ -321,7 +310,6 @@ scene("game", ({ level, score }) => {
             player.jump(CURRENT_JUMP_FORCE)
         }
     })
-
 
 
 })
