@@ -1,5 +1,5 @@
 // Ni-Yara - Countdown
-let countDownDate = new Date("Jan 26, 2024 00:00:00").getTime();
+let countDownDate = new Date("Jan 26, 2024 15:00:00").getTime();
 // let countDownDate = new Date("Jan 15, 2024 20:11:00").getTime();
 
 const container = document.getElementById('home');
@@ -68,7 +68,7 @@ const chatbotToggler = document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn = document.querySelector(".close-btn")
 
 let userMessage;
-const API_KEY = "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";
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
