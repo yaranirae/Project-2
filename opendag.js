@@ -1,6 +1,10 @@
 // Ni-Yara - Countdown
 let countDownDate = new Date("Jan 26, 2024 15:00:00").getTime();
+<<<<<<< Updated upstream
 // let countDownDate = new Date("Jan 26, 2024 09:52:00").getTime();
+=======
+// let countDownDate = new Date("Jan 26, 2024 09:59:00").getTime();
+>>>>>>> Stashed changes
 
 const container = document.getElementById('home');
 
