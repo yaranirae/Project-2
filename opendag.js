@@ -1,5 +1,5 @@
 // Countdown
-let countDownDate = new Date("Jan 26, 2024 15:00:00").getTime();
+let countDownDate = new Date("Jan 26, 2024 15:03:00").getTime();
 // let countDownDate = new Date("Jan 26, 2024 09:52:00").getTime();
 
 const container = document.getElementById('home');
@@ -68,7 +68,7 @@ const chatbotToggler = document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
-const API_KEY = "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";
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
