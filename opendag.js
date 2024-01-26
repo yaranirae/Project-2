@@ -1,4 +1,4 @@
-// Ni-Yara - Countdown
+// Countdown
 let countDownDate = new Date("Jan 26, 2024 15:00:00").getTime();
 // let countDownDate = new Date("Jan 26, 2024 09:52:00").getTime();
 
@@ -39,7 +39,7 @@ function welcome() {
 
 
 }
-
+// Welcome greeting
 let myDate = new Date();
 let hrs = myDate.getHours();
 let mins = myDate.getMinutes();
@@ -60,7 +60,7 @@ else {
 document.getElementById("TIME").innerHTML = `<br><p>${greet}</p>`;
 document.getElementById("TIME").classList.add('software-dev-open')
 
-// Ni-Yara Chatbot
+// Chatbot
 const chatInput = document.querySelector(".chat-input textarea");
 const sendChatBtn = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox");
@@ -68,7 +68,7 @@ const chatbotToggler = document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
-const API_KEY = "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";
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {

@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Ni-Yara Header & Countdown */
+/* Header & Countdown */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -230,7 +230,7 @@ label #cancel {
   transform: translateX(-17%);
 }
 
-/* Ni-Yara  Chatbot */
+/* Chatbot */
 
 .chatbot-toggler {
   position: fixed;
@@ -424,7 +424,7 @@ footer {
   height: 80px;
 }
 
-/* resonsive */
+/* responsive */
 @media (max-width: 860px) {
   .chatbot ul {
     position: absolute;
@@ -586,7 +586,7 @@ footer {
     font-weight: bold;
   }
 }
-
+/*Animation background*/
 .round {
   position: absolute;
   width: 15px;
@@ -820,7 +820,7 @@ footer {
   transform: translateX(-4px);
   color: cadetblue;
 }
-
+/*Cursor*/
 .circle {
   height: 24px;
   width: 24px;
