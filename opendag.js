@@ -1,10 +1,6 @@
 // Ni-Yara - Countdown
 let countDownDate = new Date("Jan 26, 2024 15:00:00").getTime();
-<<<<<<< Updated upstream
 // let countDownDate = new Date("Jan 26, 2024 09:52:00").getTime();
-=======
-// let countDownDate = new Date("Jan 26, 2024 09:59:00").getTime();
->>>>>>> Stashed changes
 
 const container = document.getElementById('home');
 
@@ -72,7 +68,7 @@ const chatbotToggler = document.querySelector(".chatbot-toggler");
 const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
-const API_KEY = "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";
+const API_KEY = "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";
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
@@ -112,7 +108,7 @@ const generateResponse = (incomingChatLi) => {
       })
       .catch((error) => {
         messageElement.classList.add("error");
-        messageElement.textContent = "Oops!";
+        messageElement.textContent = "Oops! Something went wrong. Please try again!";
       })
       .finally(() => chatbox.scrollTo(0, chatbox.scrollHeight));
 };
@@ -150,6 +146,5 @@ chatInput.addEventListener("keydown", (e) => {
 sendChatBtn.addEventListener("click", handelChat);
 chatbotCloseBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
 chatbotToggler.addEventListener("click", () => document.body.classList.toggle("show-chatbot"));
-
 
 
